@@ -1,0 +1,176 @@
+/* Skills Section */
+
+.skill-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+
+.skill {
+    width: 600px;
+    padding: 20px;
+    margin-right: 300px;
+}
+
+/* Title */
+.skill h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.skill-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-left:  100px;
+    margin-right: auto;
+    transition: 0.3s ease;
+}
+
+/* Skill Grid */
+.skill-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+/* Skill Container */
+.skill-container {
+    display: flex;
+    align-items: center;
+    background: #B74B48;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.skill-container:hover{
+    transform: scale(1.1);
+}
+
+.skill-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #121936;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 0;
+}
+
+.skill-container .logo, .skill-name, .skill-bar {
+    z-index: 1;
+}
+
+/* Skill Logo */
+.skill-container .logo {
+    width: 70px;
+    height: 70px;
+    background: #1d233b;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skill Name */
+.skill-name{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+/* Skill Bar */
+.skill-bar {
+    width: 70%;
+    height: 20px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    right: 10px;
+    overflow: hidden;
+}
+
+/* Percentage Bar */
+.percent-bar {
+    height: 100%;
+    background: #B74B48;
+    border-radius: 5px;
+    width: 40%; 
+}
+
+/* Mobile View */
+
+@media (max-width: 768px) {
+    .nav-links {
+        z-index: 9999;
+    }
+
+    .skill {
+        margin-left: 50%;
+    }
+
+    .skill h1 {
+        font-size: 35px;
+        margin: 50px 0 50px 150px;
+    }
+
+    .skill-content {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative; 
+        z-index: -1; 
+    }
+
+    footer {
+        bottom: -20%;
+    }
+
+}
+
+@media (max-width: 393px) {
+
+    .skill {
+        margin-left: 60%;
+    }
+
+    .skill h1 {
+        font-size: 30px;
+        margin: 50px 0 50px 220px;
+    }
+
+    .skill-content {
+        margin-left: 100px;
+    }
+
+    /* Skill Container */
+    .skill-container {
+        width: 300px;
+    }
+
+    /* Skill Bar */
+    .skill-bar {
+        width: 60%;
+    }
+
+    footer {
+        bottom: -30%;
+    }
+
+}
