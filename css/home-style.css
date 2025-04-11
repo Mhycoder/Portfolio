@@ -286,14 +286,72 @@ form textarea {
     }
 }
 
+@media (max-width: 1730px) {
+    .social-icons .icons {
+        width: 30px;
+        height: 30px;
+        margin: 10% 2% 10% 0;
+    }
+    
+    .social-icons .hire-me {
+        padding: 2% 4%;
+    }
+
+    .popup-home {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1190px) {
+    .social-icons .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+    .home .home-content h1 {
+        font-size: 40px;
+    }
+    
+    
+    .home-content h3 {
+        font-size: 30px;
+        }
+
+    .home-content p {
+        font-size: 16px;
+        width: 100%;
+        text-justify: justify;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+
+    .home {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .social-icons .icons {
+        width: 30px;
+        height: 30px;
+        margin: 10% 2% 10% 0;
+    }
+    
+    .social-icons .hire-me {
+        padding: 2% 4%;
+        }
+}
+
 /* Mobile View */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     /* Profile Picture */
 
     .home {
-        flex-direction: column;
         gap: 50px;
     }
 
@@ -339,7 +397,7 @@ form textarea {
     
     .social-icons .hire-me {
         padding: 2% 4%;
-        }
+    }
     
     /* Pop Up */
     
@@ -349,16 +407,16 @@ form textarea {
     
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 712px) {
     .social-icons .icons {
-        width: 30px;
-        height: 30px;
-        margin: 10% 2% 10% 0;
+        width: 15px;
+        height: 15px;
     }
-    
+
     .social-icons .hire-me {
         padding: 2% 4%;
-        }
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 412px) {
