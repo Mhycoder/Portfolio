@@ -118,6 +118,22 @@
 
 /* Mobile View */
 
+@media (max-width: 1024px) {
+    .skill-content {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative; 
+        z-index: -1; 
+    }
+
+    .skill {
+        margin-left: 30%;
+    }
+
+    .skill h1 {
+        margin: 50px 0 50px 150px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         z-index: 9999;
@@ -132,45 +148,41 @@
         margin: 50px 0 50px 150px;
     }
 
-    .skill-content {
-        grid-template-columns: repeat(1, 1fr);
-        position: relative; 
-        z-index: -1; 
-    }
-
-    footer {
-        bottom: -20%;
-    }
-
 }
 
-@media (max-width: 393px) {
-
+@media (max-width: 412px) {
     .skill {
-        margin-left: 60%;
+        margin-left: 80%;
     }
 
     .skill h1 {
         font-size: 30px;
-        margin: 50px 0 50px 220px;
+        margin: 50px 0 50px 110px;
     }
 
-    .skill-content {
-        margin-left: 100px;
+    .skill-container h3 {
+        font-size: 16px;
     }
 
     /* Skill Container */
     .skill-container {
+        padding: 10px;
         width: 300px;
-    }
+        }
+
+
+    /* Skill Logo */
+    .skill-container .logo {
+        width: 50px;
+        height: 50px;
+        }
 
     /* Skill Bar */
     .skill-bar {
-        width: 60%;
+        width: 70%;
+        left: 25%;
     }
 
-    footer {
-        bottom: -30%;
-    }
+
 
 }
