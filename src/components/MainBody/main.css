@@ -1,0 +1,111 @@
+.main {
+  width: 75%;
+  margin-left: 25%;
+}
+
+#home {
+  position: relative;
+  padding: 20% 5% 10% 5%;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  padding: 10% 5%;
+}
+
+.section-title,
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent-text);
+  background-color: var(--accent);
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.home-text,
+.section-text {
+  width: 75%;
+  font-size: 4.5rem;
+  margin: 1rem 0;
+  color: var(--body-text);
+}
+
+.section-text {
+  font-size: 3.5rem;
+}
+
+.button {
+  margin-top: 5rem;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  background: var(--container-bg);
+  color: var(--body-text);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--body-text);
+  border-radius: 12px;
+}
+
+.boxes h1 {
+  font-size: 3rem;
+}
+
+.boxes p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  .home-text,
+  .section-text {
+    width: 100%;
+  }
+
+  #home {
+    padding: 10% 5%;
+  }
+}
+
+@media (max-width: 412px) {
+  .home-text {
+    font-size: 3rem;
+  }
+  .section-text {
+    font-size: 2rem;
+  }
+  .boxes h1 {
+    font-size: 2.5rem;
+  }
+  .boxes p {
+    font-size: 1rem;
+  }
+}

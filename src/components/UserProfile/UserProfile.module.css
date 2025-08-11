@@ -1,0 +1,144 @@
+.sideProfile {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 20%;
+  padding: 36px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--bg);
+  color: var(--body-text);
+  border: 1px solid var(--border-color);
+  transition: all 0.5s ease;
+}
+
+.logoContainer,
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profilePicture {
+  height: auto;
+  background-color: var(--body-text);
+  border-radius: 12px;
+}
+
+.socialLinks {
+  justify-content: center;
+}
+
+.information,
+.logoContainer,
+.socialLinks,
+.profilePicture,
+.sideProfile button {
+  width: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  color: var(--body-text);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: 0.2s ease;
+}
+
+.icons {
+  font-size: 32px;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-dark);
+  color: var(--accent-text);
+}
+
+.sideProfile button {
+  padding: 12px 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-wrap: nowrap;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: var(--accent-text);
+  background-color: var(--accent);
+  transition: 0.5s ease;
+}
+
+.sideProfile button:hover {
+  background-color: var(--accent-dark);
+}
+
+@media (max-width: 1475px) {
+  .socialLinks {
+    gap: 8px;
+  }
+
+  .icons {
+    font-size: 24px;
+  }
+
+  .wrapper button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .icons {
+    font-size: 32px;
+  }
+
+  .wrapper button {
+    font-size: 24px;
+  }
+
+  .sideProfile {
+    position: relative;
+    width: 80%;
+    margin: 3rem 5%;
+  }
+
+  .sideProfile button {
+    padding: 12px 8px;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1200px) {
+  .socialLinks {
+    gap: 24px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+}
